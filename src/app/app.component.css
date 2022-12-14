@@ -1,0 +1,81 @@
+#container{
+    margin: auto;
+    width: 90%;
+}
+#logo{
+    background-color: rgba(128, 128, 128, 0.191);
+    width: 100%;
+  padding-left: 2%;
+  line-height: 50px;
+  min-height: 50px;
+  margin-bottom: 10px;
+}
+#nav-div{
+    width: 100%;
+    min-height: 50px;
+    background-color: rgba(128, 128, 128, 0.191);
+    /* text-align: center; */
+    line-height: 50px;
+    margin-bottom: 5px;
+    background-color:rgba(4, 17, 13, 0.993);
+    color:whitesmoke;
+
+}
+#header-div{
+    width: 100%;
+    min-height: 200px;
+ background-color: rgba(204, 201, 201, 0.171);
+    text-align: center;
+    line-height: 200px;
+    margin-bottom: 10px;
+}
+#main-div{
+    width: 100%;
+    /* min-height: 400px; */
+    /* background-color: rgba(128, 128, 128, 0.191); */
+    margin-bottom: 10px;
+    
+}
+#sideBar-div{
+    width: 20%;
+    min-height: 430px;
+    background-color: rgba(230, 230, 230, 0.315);
+    float: left;
+    text-align: center;
+    /* line-height: 430px; */
+}
+#Button-div{
+    margin-top: 20px;
+}
+#BodyArea-div{
+   width: 75%;
+   min-height: 430px;
+   float: right;
+   background-color: rgba(230, 230, 230, 0.315);
+ 
+   /* text-align: center; */
+   /* line-height: 430px; */
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+
+
+}
+#footer-div{
+    width:100%;
+    min-height: 50px;
+    line-height: 50px;
+    text-align: center;
+    /* background-color:rgba(4, 17, 13, 0.993); */
+    background-color:rgba(4, 17, 13, 0.993);
+    color:whitesmoke;
+
+}
+.mat-raised-button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 30px;
+    line-height: 30%;
+}

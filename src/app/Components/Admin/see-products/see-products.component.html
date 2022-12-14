@@ -1,0 +1,51 @@
+
+   <div class="container" *ngIf="ShowContainer">
+
+      
+    <mat-card class="card1">
+     <mat-card-content>
+       <form [formGroup]="ProductForm">
+         Product Name: <input type="text" formControlName="productName" placeholder="add name">
+         Description: <textarea type="text" formControlName="description" placeholder="add description"></textarea>
+         Price: <input type="number" formControlName="price" placeholder="add price">
+         Category: <select  formControlName="category">
+         <option *ngFor="let item of categoryArray" value={{item.categoryName}} >{{item.categoryName}}</option>    
+         </select>
+          <span>
+            <button type="button"  mat-raised-button  color="primary"  (click)="updateProducts();">Update</button>
+            <button type="button"  mat-raised-button  color="warn"  (click)="close();">Close</button>
+         
+          </span>
+      </form>
+     </mat-card-content>
+   </mat-card>
+   </div>
+
+  
+
+
+
+<div>
+    <span style="width: 50px;" class="mx-auto"> 
+    
+      <button style="display: inline-block;" type="button"  mat-stroked-button color="primary" (click)="showProducts();">Show Products</button>
+     
+   </span>
+  
+  
+     <div class="row">
+       <div class="col-sm" *ngFor="let pro of ProductArray">
+         <div class="card" style="width: 16rem; margin-top: 20px; margin-left: 20px;">
+             <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+             <div class="card-body">
+               <h5 class="card-title">Product Name : {{pro.name}}</h5>
+               <p class="card-text">Description : {{pro.description}}</p>
+               <p class="card-text">Price : {{pro.price}}</p>
+               <button type="button" mat-raised-button color="primary" (click)="editRow(pro)">Edit</button> 
+               <button mat-raised-button color="warn" (click)="deleteRow(pro.id)">Delete</button> 
+             </div>
+           </div>
+       </div>
+     </div>
+     
+</div>

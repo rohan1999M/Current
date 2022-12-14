@@ -1,0 +1,69 @@
+<!-- <div id="container">
+<div id="logo">LOGO</div>
+<div id="nav-div">Navigation</div>
+<div id="header-div">Header/Banner</div>
+<div id="main-div" class="clearfix">
+  <div id="sideBar-div">Side Bar</div>
+  <div id="BodyArea-div">Body Area</div>
+</div>
+<div id="footer-div">Footer</div>
+</div> -->
+
+<div id="container">
+
+  <div id="logo">
+   ONLINE STORE
+  </div>
+
+  <div id="nav-div"><app-nav-bars></app-nav-bars></div>
+
+  <div id="header-div">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+      </div>
+      <div class="carousel-inner w-100">
+        <div class="carousel-item active">
+          <img src="https://images.vexels.com/media/users/3/174658/raw/307d3881cf0a68b1a2a19a168471dbd6-christmas-sale-photo-banner.jpg" style="height: 350px; width:100px"  class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://th.bing.com/th/id/OIP.HXBDT2g4Gy6SS4uO4UJGjgHaDT?pid=ImgDet&rs=1" style="height: 350px; width:100px" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <div id="main-div" class="clearfix">
+
+    <div id="sideBar-div">
+
+        <div id="Button-div">
+        <!-- <button mat-raised-button color="primary" routerLink="/addCategory">Add Category</button><br> -->
+        <button mat-raised-button color="primary" routerLink="/ListCategory">List Category</button><br>
+        <button mat-raised-button color="primary" routerLink="/AddProduct">Add Product</button><br>
+        <button mat-raised-button color="primary" routerLink="/SeeProduct">Show Product</button><br>
+       
+      </div>
+    </div>
+
+    <div id="BodyArea-div"><router-outlet></router-outlet></div>
+
+  </div>
+
+    <div id="footer-div">
+
+      <p> © 2022 Design by Rohan Mourya</p>
+
+    </div>
+
+</div>

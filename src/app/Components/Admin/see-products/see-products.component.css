@@ -1,0 +1,19 @@
+.card1{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    background-color: rgba(211, 231, 225, 0.144);
+    border-radius: 7px;
+    box-shadow: 2px 1px 30px 3px;
+}
+.mat-raised-button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    min-height: 30px;
+    line-height: 30%;
+}
+.mat-stroked-button{
+    margin-left: 20px;
+    margin-top: 20px;
+}

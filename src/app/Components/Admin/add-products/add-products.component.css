@@ -1,0 +1,24 @@
+.mat-raised-button{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    min-height: 30px;
+    line-height: 30%;
+}
+/* .mat-stroked-button{
+    margin-left: 20px;
+    min-height: 30px;
+    line-height: 30%;
+} */
+.card{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+/* .example-form{
+    color: Green;
+   box-sizing: 50%;
+   padding-left: 30px;
+} */
+ 
+  

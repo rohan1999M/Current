@@ -1,0 +1,22 @@
+<div id="navbars">
+   
+    <button mat-stroked-button routerLink="/SeeProduct">Home</button>
+    <button mat-stroked-button>About Us</button>
+
+
+    <button class="menu1" mat-stroked-button  [matMenuTriggerFor]="menu" (click)="MenuClick();">Category</button>
+    
+    <mat-menu #menu="matMenu">
+      <div *ngFor="let c of Category">
+      <button mat-menu-item (click)=" ChooseMenu(c);">{{c.categoryName}}</button>
+      </div>
+      <!-- <button mat-menu-item>LAptop</button> -->
+
+    </mat-menu>
+   
+
+    <button mat-stroked-button>Logout</button>
+
+
+
+</div>

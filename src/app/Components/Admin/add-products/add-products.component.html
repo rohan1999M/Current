@@ -1,0 +1,72 @@
+
+
+    <!-- <div style="padding: 30px; width: 1300px;" class="mx-auto" *ngIf="showAdd">
+       <h1 style="margin-bottom: 80px;">ADD PRODUCTS</h1>   -->
+       <br>
+       <div class="container">
+
+       <mat-card class="card">
+        <mat-card-content>
+           <form [formGroup]="ProductForm" class="example-form">
+           
+                 Product Name:
+            <input matInput type="text" formControlName="productName" placeholder="add name">
+           
+          Description: 
+            <textarea matInput type="text" formControlName="description" placeholder="add description"></textarea>
+          
+
+        
+            Price:
+             <input matInput type="number" formControlName="price" placeholder="add price">
+       
+
+            Category: 
+            <select  formControlName="category">
+            <option  matInput *ngFor="let item of categoryArray" value={{item.categoryName}} >{{item.categoryName}}</option>    
+            </select>
+             <span>
+               <button type="button"  mat-raised-button  color="primary"  (click)="addPorduct();" [disabled]="ProductForm.invalid">Add</button>
+                <!-- <button type="button"  mat-raised-button color="accent" (click)="updateProducts();">UPDATE</button>  -->
+             </span>
+           
+            </form> 
+
+        </mat-card-content>
+      </mat-card> 
+
+
+      
+
+      <!-- <div class="example-container">
+        <mat-form-field  appearance="fill">
+          <mat-label>Enter Product Name</mat-label>
+          <input matInput formControlName="productName" placeholder=" Name">
+        </mat-form-field>
+        <mat-form-field  appearance="fill">
+          <mat-label>Enter Description:</mat-label>
+          <input matInput formControlName="description" placeholder=" Description">
+     
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter Price: </mat-label>
+          <input matInput  formControlName="price" placeholder="Price">
+        </mat-form-field>
+
+
+
+        <span>
+          <button type="button"  mat-raised-button  color="primary"  (click)="addPorduct();">Add</button>
+           <button type="button"  mat-raised-button color="accent" (click)="updateProducts();">UPDATE</button>  
+        </span>
+      
+       
+      </div>-->
+      </div>
+
+       
+    
+
+
+  
+        

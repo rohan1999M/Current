@@ -1,0 +1,51 @@
+<div class="Category">
+    <mat-card *ngIf="showUpdate">
+        <mat-card-content>
+               
+            <form [formGroup]="CatForm" id="UpdateFrom">
+                Update Category: <input  matInput type="text" formControlName="categoryName" placeholder="add category">
+                
+                <button type="button"  mat-raised-button color="primary" (click)="updateCategory();">Update</button>
+            </form> 
+        
+        </mat-card-content>
+      </mat-card>
+      <br>
+
+       <mat-card class="card1" *ngIf="hide">
+        <mat-card-content>
+
+            <div class="card-table">
+                <div class="card-product">
+                    
+                   
+                     <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <!-- <th>Sr.No</th> -->
+                                <th>Category</th>
+                                <th>Action</th>
+                                <th><button type="button"  mat-raised-button color="primary" (click)="openDialog();">Add New</button></th>
+                                <!-- <th> <button type="button"  mat-raised-button color="primary" routerLink="/addCategory">Add New</button></th> -->
+                            </tr>
+                        </thead>
+                        <tbody *ngFor="let category of showCategory">
+                            <tr>
+                                <!-- <td>{{category.id}}</td> -->
+                                <td>{{category.categoryName}}</td>
+                                <td>
+                                    <button mat-raised-button color="primary" (click)="editRow((category));">Edit</button>
+                                    <button mat-raised-button color="warn" (click)="deleteRow((category.id))">Delete</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table> 
+               
+                </div>
+            </div>
+        
+        </mat-card-content>
+      </mat-card>
+
+
+

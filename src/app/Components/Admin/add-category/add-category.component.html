@@ -1,0 +1,19 @@
+<div class="Category">
+    <!-- <mat-card class="card1"> -->
+          <h3>Add Category</h3>
+            
+            <form [formGroup]="CatForm">
+                <mat-form-field appearance="fill">
+                    <mat-label>New Category</mat-label>
+                    <input matInput type="text" formControlName="categoryName" >
+                  </mat-form-field>
+                <!-- <mat-label>Add Category:</mat-label>  <input matInput type="text" formControlName="categoryName" placeholder="add category"> -->
+                <button mat-raised-button color="primary" (click)="add();" [disabled]="CatForm.invalid">Add</button>
+                <button mat-raised-button color="warm"  mat-dialog-close >close</button>
+               </form>
+               <span *ngIf="show">{{message}}</span>
+
+</div>
+
+
+<!-- [disabled]="CatForm.invalid" -->
